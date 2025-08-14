@@ -1,42 +1,30 @@
 # BookBot 
-
-BookBot es una herramienta simple que analiza libros de texto y proporciona estadísticas sobre el contenido.
-
-## ¿Qué hace?
-
-BookBot lee un archivo de texto y te muestra:
-- **Conteo de palabras**: Cuántas palabras hay en total
-- **Conteo de caracteres**: Frecuencia de cada letra del alfabeto (ordenada de mayor a menor)
-
-## Instalación
-
-1. Clona o descarga este repositorio
-2. Asegúrate de tener Python 3 instalado
-3. No se requieren dependencias adicionales
-
-## Uso
-
+BookBot is a simple tool that analyzes text books and provides statistics about the content.
+## What does it do?
+BookBot reads a text file and shows you:
+- **Word count**: How many words there are in total
+- **Character count**: Frequency of each letter of the alphabet (sorted from highest to lowest)
+## Installation
+1. Clone or download this repository
+2. Make sure you have Python 3 installed
+3. No additional dependencies required
+## Usage
 ```bash
-python3 main.py <ruta_al_archivo_de_texto>
+python3 main.py <path_to_text_file>
 ```
-
-### Ejemplo:
+### Example:
 ```bash
 python3 main.py books/frankenstein.txt
 ```
-
-## Estructura del proyecto
-
+## Project structure
 ```
 bookbot/
-├── main.py        # Archivo principal
-├── stats.py       # Funciones de análisis
-├── books/         # Directorio para tus libros (gitignore)
+├── main.py        # Main file
+├── stats.py       # Analysis functions
+├── books/         # Directory for your books (gitignored)
 └── README.md
 ```
-
-## Ejemplo de salida
-
+## Sample output
 ```
 ============ BOOKBOT ============
 Analyzing book found at books/frankenstein.txt...
@@ -54,13 +42,7 @@ h: 19725
 ...
 ============= END ===============
 ```
-
-## Notas
-
-- Solo analiza caracteres alfabéticos (ignora números y símbolos)
-- El análisis no distingue entre mayúsculas y minúsculas
-- Coloca tus archivos de texto en el directorio `books/` para mantener el proyecto organizado
-
----
-
-BookBot is my first [Boot.dev](https://www.boot.dev) project!
+## Notes
+- Only analyzes alphabetic characters (ignores numbers and symbols)
+- Analysis is case-insensitive
+- Place your text files in the `books/` directory to keep the project organized
